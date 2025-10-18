@@ -17,8 +17,12 @@ export default function ExplorePropertyOne() {
             return(
                 <div className="col" key={index}>
                     <div className="position-relative">
-                        <Link href="/classical-layout-with-sidebar" className="d-flex align-items-center justify-content-start border rounded-pill p-2">
-                            <div className="explod-thumb flex-shrink-0"><Image src={item.image} className="img-fluid circle" width={65} height={65} alt=""/></div>
+                        <Link href="/classical-layout-with-sidebar" className="d-flex align-items-center justify-content-center border rounded-pill p-2">
+                        {/* <Link href="/classical-layout-with-sidebar" className="d-flex align-items-center justify-content-start border rounded-pill p-2"> */}
+                            {/* <div className="explod-thumb flex-shrink-0">
+                                <Image src={item.image} className="img-fluid circle" width={65} height={65} alt=""/>
+                                </div> */}
+                            
                             <div className="explod-caps ps-3">
                                 <h5 className="fs-5 fw-medium mb-0">{item.loction}</h5>
                                 <p className="text-muted-2 fs-sm m-0">{item.property}</p>
