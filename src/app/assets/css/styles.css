@@ -2823,7 +2823,14 @@ nav a:hover {
 @media (min-width:1026px) {
      .navigation-landscape .nav-menus-wrapper{
 transform: translateY(10px) !important;
-     }  
+     } 
+     .nav-menus{
+        transform: translate(20%);
+     } 
+
+     .pl-lg-2{
+        padding-left: 8px !important;
+     }
 }
 
 .navigation-portrait .nav-menus-wrapper.nav-menus-wrapper-right {

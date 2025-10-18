@@ -102,14 +102,14 @@ export default function Navbar({transparent}:{transparent:any}) {
                     </div>
                     <div className={`nav-menus-wrapper  ${toggle ? 'nav-menus-wrapper-open' : ''}`} style={{transitionProperty:toggle ? 'none' : 'left', }}>
                         <span className="nav-menus-wrapper-close-button" onClick={()=>setIsToggle(!toggle)}>✕</span>
-                        <ul className="nav-menu">
-                        <li><Link href="/" className={current === '/' ? 'active' : ''}>Home</Link></li>
-                        <li><Link href="/about-us" className={current === '/about-us' ? 'active' : ''}>About Us</Link></li>
+                        <ul className="nav-menu nav-menus">
+                        {/* <li><Link href="/" className={current === '/' ? 'active' : ''}>Home</Link></li>
+                        <li><Link href="/about-us" className={current === '/about-us' ? 'active' : ''}>About Us</Link></li> */}
                         <li><Link href="/classical-layout-with-sidebar" className={current === '/classical-layout-with-sidebar' ? 'active' : ''}>Listings</Link></li>
                         <li><Link href="/agents" className={current === '/agents' ? 'active' : ''}>Agents</Link></li>
                         <li><Link href="/agencies" className={current === '/agencies' ? 'active' : ''}>Agencies</Link></li>
                         <li><Link href="/blog" className={current === '/blog' ? 'active' : ''}>Blogs</Link></li>
-                        <li><Link href="/contact" className={current === '/contact' ? 'active' : ''}>Contacts</Link></li>
+                        <li><Link href="/contact" className={current === '/contact' ? 'active' : ''}>Contact</Link></li>
                             {/* <li className={`${['/','/home-2','/home-3','/home-4','/home-5','/home-6','/home-7','/home-8','/home-8','/home-9','/home-10','/home-11','/video','/map'].includes(current) ? 'active' : ''} ${activeMenu['home']?.main ? 'show' : ''}`} onMouseEnter={() => handleMouseEnter('home')} onMouseLeave={() => handleMouseLeave('home')}><Link href="#">Home<FiChevronDown className="submenu-indicator"/></Link>
                                 <ul className="nav-dropdown nav-submenu" style={{display: activeMenu['home']?.main ? 'block' : 'none', pointerEvents: activeMenu['home']?.main ? 'auto' : 'none',}}>
                                     <li><Link className={current === '/' ? 'active' : ''} href="/" >Home Layout 1</Link></li>

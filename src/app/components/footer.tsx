@@ -16,15 +16,16 @@ export default function Footer() {
                             </span>
                         </Link>
                         <div className="footer-add">
-                            <p>India</p>
+                            {/* <p>India</p>
                             <p>+91-8957865554</p>
-                            <p>info@realestateonestopsolutions.com</p>
+                            <p>info@realestateonestopsolutions.com</p> */}
+                            <p className='pl-lg-2'>Making property dreams come true, one home at a time. Your journey to the perfect space starts here with expert guidance and dedicated support.</p>
                         </div>
                         
                     </div>
                 </div>		
                 <div className="col-lg-3 col-md-4">
-                    <div className="footer-widget">
+                    <div className="footer-widget " >
                         <h4 className="widget-title">Navigations</h4>
                         <ul className="footer-menu">
                             <li><Link href="/about-us">About Us</Link></li>

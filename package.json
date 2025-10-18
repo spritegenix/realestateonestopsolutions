@@ -1,7 +1,7 @@
 {
-  "name": "resido",
+  "name": "Employmentonestopsolutions",
   "version": "1.0.0",
-  "description": "Resido - Next Js Real Estate Template",
+  "description": "Employmentonestopsolutions",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
