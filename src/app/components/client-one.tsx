@@ -54,8 +54,9 @@ export default function ClientOne() {
                                         <div className="smart-tes-author">
                                             <div className="st-author-box">
                                                 <div className="st-author-thumb">
-                                                    <div className={`quotes ${item.quote}`}><i className="fa-solid fa-quote-left"></i></div>
-                                                    <Image src={item.image} width={0} height={0} sizes='100vw' style={{width:'100%', height:'auto'}} className="img-fluid" alt="" />
+                                                    {/* <div className={`quotes ${item.quote}`}><i className="fa-solid fa-quote-left"></i></div> */}
+                                                    <Image src="/img/rating.png" width={0} height={0} sizes='100vw' style={{width:'100%', height:'auto'}} className="img-fluid" alt="testimonials" />
+                                                    {/* <Image src={item.image} width={0} height={0} sizes='100vw' style={{width:'100%', height:'auto'}} className="img-fluid" alt="" /> */}
                                                 </div>
                                             </div>
                                         </div>
