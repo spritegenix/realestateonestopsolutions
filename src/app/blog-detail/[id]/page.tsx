@@ -19,8 +19,9 @@ interface BlogData {
     fullContent: string;
 }
 
-export default function Page({ params }: { params: { id: string } } ) {
-    const data = blogData.find((item:BlogData)=>item.id === parseInt(params.id))   
+export default async function Page({ params }: { params: Promise<{ id: string }> } ) {
+    const { id } = await params;
+    const data = blogData.find((item:BlogData)=>item.id === parseInt(id))   
   return (
     <div className='blog-page'>
         <Navbar transparent={false}/>   
